@@ -6,6 +6,7 @@ class Recipe:
     preparation = ""
     servings = 0
     time = 0
+    tags = list()
 
     recipeCount = 0
 
@@ -15,3 +16,6 @@ class Recipe:
 
     def hasIngrediets(self):
         return len(self.ingredients) > 0
+
+    def hasPreparation(self):
+        return len(self.preparation) > 0
